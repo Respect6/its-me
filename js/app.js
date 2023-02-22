@@ -6,7 +6,7 @@ anime.timeline({ loop: true })
         targets: '.Title .letter',
         opacity: [0, 1],
         easing: "easeInOutQuad",
-        duration: 2000,
+        duration: 2200,
         delay: (el, i) => 150 * (i + 1)
     }).add({
         targets: '.Title',
@@ -15,3 +15,4 @@ anime.timeline({ loop: true })
         easing: "easeOutExpo",
         delay: 1000
     });
+

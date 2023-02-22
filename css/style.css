@@ -1,4 +1,4 @@
-.hero {
+body {
     margin: 0px;
     background-image: url('../photo/background.jpeg');
     background-attachment: fixed;
@@ -8,11 +8,27 @@
 
 }
 
+.header {
+    position: sticky;
+    top: 0px;
+    margin-left: 4%;
+    margin-right: auto;
+    display: inline-flex;
+    gap: 115px;
+    justify-content: center;
+}
+
 .Title {
     font-weight: 900;
     font-size: 3.5em;
-    color: #fbff9a;
+    color: #d6dd52;
+    text-decoration: underline;
+    text-decoration-color: #af0002c7;
 
+}
+
+.nav_cointainer {
+    padding-top: 31px;
 }
 
 .nav_link::before {
@@ -42,11 +58,59 @@
     margin-right: 50px;
     position: relative;
     font-family: 'Courier New', Courier, monospace;
-    padding: 16px 0;
+    font-size: 21px;
+    padding: 10px 0;
     margin: 0 12px;
     letter-spacing: 1px;
     line-height: 16px;
     font-weight: 700;
     transition: color 0.1s, background-color 0.1s, padding 0.2s ease-in;
-    color: #fff;
+    color: black;
+
+}
+
+.wrapper {
+    padding-top: 20px;
+}
+
+.resume {
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: rgb(197, 194, 194);
+    border: 2px solid rgb(186, 182, 182);
+    letter-spacing: 2px;
+    text-align: center;
+    position: relative;
+    transition: all .35s;
+}
+
+.resume span {
+    position: relative;
+    z-index: 2;
+}
+
+.resume:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #d59e4b;
+    transition: all .35s;
+}
+
+.resume:hover {
+    color: rgb(3, 0, 0);
+    box-shadow: 0px 0px 12px #d59e4b;
+    ;
+}
+
+.resume:hover:after {
+    width: 100%;
 }

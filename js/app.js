@@ -11,8 +11,17 @@ anime.timeline({ loop: true })
     }).add({
         targets: '.Title',
         opacity: 0,
-        duration: 5000,
+        duration: 4000,
         easing: "easeOutExpo",
         delay: 1000
     });
 
+
+
+// function backgroundImage() {
+//     document.body.style.backgroundImage = "url('../photo/background_1.jpg')";
+//     document.body.style.backgroundAttachment = 'fixed';
+//     document.body.style.backgroundPosition = 'center';
+//     // document.body.style.backgroundRepeat = 'no - repeat';
+//     document.body.style.backgroundSize = 'cover';
+// }

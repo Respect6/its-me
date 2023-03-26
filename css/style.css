@@ -434,6 +434,7 @@ h1 {
 }
 
 .button_third_cointainer {
+    width: 300px;
     padding: 1.3em 3em;
     font-size: 19px;
     text-transform: uppercase;
